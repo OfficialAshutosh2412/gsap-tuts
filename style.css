@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #111;
+    color: #fff;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background: crimson;
+}
