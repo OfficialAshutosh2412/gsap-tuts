@@ -1,39 +1,72 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-body{
-    width: 100%;
-    height: 100%;
-    color: white;
-    background: #2b1f2c;
-
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: #2b1f2c;
+  overflow: hidden;
 }
-.back
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
 }
-.box1,.box2,.box3{
-    height: 200px;
-    width: 200px;
-    background: crimson;  border-radius: 92px;
-    border:4px solid white;
+.box1,
+.box2,
+.box3 {
+  height: 200px;
+  width: 200px;
+  background: crimson;
+  border-radius: 92px;
+  border: 4px solid white;
 }
-.above{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #0000007a;
-    backdrop-filter: blur(90px);
+.above {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #0000007a;
+  backdrop-filter: blur(90px);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-weight: bold;
+}
+.hero {
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero .name::first-letter {
+  font-size: 15rem;
+  color: #d01c5b;
+}
+.hero .surname {
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 0px;
 }
