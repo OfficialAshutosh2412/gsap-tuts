@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: #2b1f2c;
+  overflow-x: hidden;
+}
+
+.tc div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  text-transform: capitalize;
+}
+.tc div:nth-child(1) {
+  gap: 20px;
+}
+.container {
+  background: #581179;
+}
+.container h1 {
+  font-size: 30vw;
+  white-space: nowrap;
+  transform: translateX(35%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 200;
+  color: rgb(188, 81, 255);
+}
+.container h1::first-letter {
+  color: rgb(255, 255, 255);
+  background: #0000002d;
+}
+.container h1::selection {
+  color: rgb(10, 156, 112);
+  background: #000;
+}

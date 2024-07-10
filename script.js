@@ -38,10 +38,10 @@ gsap.to(".box3", {
   yoyo: true,
 });
 
-gsap.to("h1",{
-    x:-200,
-    stagger:1,
-    duration:3,
-    repeat:-1,
-    yoyo:true
-})
+gsap.to("h1", {
+  x: -200,
+  stagger: 1,
+  duration: 3,
+  repeat: -1,
+  yoyo: true,
+});
