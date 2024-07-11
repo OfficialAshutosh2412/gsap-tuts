@@ -17,7 +17,6 @@ gsap.to(".container h1", {
   scrollTrigger: {
     trigger: ".container",
     scroller: "body",
-    markers: true,
     start: "top top",
     end: "top -100%",
     scrub: 4,
