@@ -5,9 +5,9 @@ gsap.to(".box1", {
   delay: 1,
   rotate: 6520,
 
-  backgroundColor: "blue",
+  backgroundColor: "black",
   border: 5,
-  borderColor: "pink",
+  borderColor: "white",
   scale: 1,
   repeat: -1,
   yoyo: true,
@@ -15,33 +15,44 @@ gsap.to(".box1", {
 gsap.to(".box2", {
   x: 800,
   duration: 20,
-  delay: 1,
+  delay: 3,
   rotate: 9990,
-  backgroundColor: "cyan",
+  backgroundColor: "black",
   border: 5,
-  borderColor: "pink",
+  borderColor: "white",
   scale: 1.1,
   repeat: -1,
   yoyo: true,
-  scale: 5,
+  scale: 2,
 });
 gsap.to(".box3", {
   x: 1000,
   duration: 12,
   delay: 1,
   rotate: 11000,
-  backgroundColor: "yellow",
+  backgroundColor: "black",
   border: 5,
-  borderColor: "pink",
+  borderColor: "white",
   scale: 3,
   repeat: -1,
   yoyo: true,
 });
 
-gsap.to("h1", {
-  x: -200,
+gsap.from("h2", {
+  y: 1000,
   stagger: 1,
-  duration: 3,
-  repeat: -1,
+  duration: 1,
   yoyo: true,
+  ease: "bounce.inOut",
+  scale: 2,
+  rotate: 20,
+  opacity: 0,
+});
+
+gsap.from("h3", {
+  x: 60,
+  opacity: 0,
+  duration: 2,
+  delay: 4,
+  ease: "slow(0.7,0.7,false)",
 });
