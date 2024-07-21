@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-size: gilroy;
+}
+h1 {
+  overflow: hidden;
+}
+h1 span {
+  display: inline-block;
+}

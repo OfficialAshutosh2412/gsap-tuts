@@ -1,14 +1,14 @@
 gsap.from("nav .brand div", {
-  stagger: 0.2,
+  stagger: 0.15,
   y: -50,
   x: -500,
-  opacity: 0,
-  duration: 1.5,
+  opacity: -10,
+  duration: 2,
   delay: 0,
-  ease: "back.inOut",
-  rotate: 50000,
+  ease: "sine.inOut",
+  rotate: 5000,
   color: "white",
-  scale: 20,
+  scale: -20,
 });
 gsap.from(".menu", {
   duration: 2,
@@ -35,6 +35,7 @@ tl.from(".mobile-nav label", {
   duration: 0.5,
   y: -100,
   ease: "circ.out",
+  opacity: -5,
 });
 
 open.addEventListener("click", function () {
