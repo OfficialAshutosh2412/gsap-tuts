@@ -1,0 +1,320 @@
+@font-face {
+  font-family: japan;
+  src: url("./3856NeueMachina.woff2");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: japan;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --theme-color-: rgb(185, 255, 102);
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  padding: 0% 100px;
+  text-transform: capitalize;
+}
+nav .brand {
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+  font-size: 1.4rem;
+}
+nav .brand i {
+  font-size: 2.5rem;
+  rotate: 45deg;
+}
+nav .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+nav .menu button {
+  background: white;
+  height: 8vh;
+  padding: 0 10px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+  font-size: 0.9rem;
+}
+nav .menu button::first-letter {
+  text-transform: capitalize;
+}
+/* hero section  */
+.hero {
+  height: calc(100vh - 15vh);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left,
+.right {
+  height: 100%;
+  width: 100%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+}
+.left-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.left h1 {
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+.left p {
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.left button {
+  background: #000;
+  height: 10vh;
+  padding: 5px 30px;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+/* image stripper */
+.image-strip {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.image-strip img {
+  width: 70%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+/* services */
+.service {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+.service .service-title {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+.service .service-title h2 {
+  font-size: 2.5rem;
+  background: var(--theme-color-);
+  padding: 1% 1%;
+  border-radius: 10px;
+}
+.service .service-title p {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+/* service card */
+.card-container {
+  width: 100%;
+  height: 100%;
+}
+.card-flex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 40px;
+  position: relative;
+  border-radius: 40px;
+  background: white;
+  border: 2px solid black;
+  box-shadow: 0px 5px 0px 1px black;
+  overflow: hidden;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  width: fit-content;
+  background: var(--theme-color-);
+  padding: 2% 3%;
+  border-radius: 5px;
+}
+.card img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* Adjusts positioning for vertical centering */
+}
+.card .card-foot {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card .card-foot button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black;
+  color: var(--theme-color-);
+  font-size: 2rem;
+  rotate: 50deg;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-foot label {
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.second-black .card:nth-child(2),
+.first-black .card:nth-child(1) {
+  background: #000;
+}
+.second-black .card:nth-child(2) h3,
+.first-black .card:nth-child(1) h3,
+.second-black .card:nth-child(2) button,
+.first-black .card:nth-child(1) button {
+  background: white;
+  color: black;
+}
+
+.second-black .card:nth-child(2) label,
+.first-black .card:nth-child(1) label {
+  background: #000;
+  color: white;
+}
+/* proposal */
+.proposal {
+  width: 87%;
+  margin: 0 auto;
+  height: 55vh;
+  background: rgb(244, 244, 244);
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+.proposal .left-prop {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px 50px;
+}
+.proposal .left-prop h1 {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.proposal .left-prop p {
+  font-weight: 500;
+  font-size: 1.1rem;
+
+  margin-bottom: 30px;
+}
+.proposal .left-prop button {
+  background: black;
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.proposal img {
+  position: absolute;
+  right: 100px;
+  top: -20px;
+}
+/* footnote */
+.footnote {
+  width: 87%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background: #000;
+  border-radius: 30px;
+  height: 50vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footnote .note {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.footnote .note div:nth-child(1) p {
+  font-size: 1rem;
+  color: rgb(232, 232, 232);
+  line-height: 1.5;
+}
+.footnote .note div:nth-child(2) {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footnote .note div:nth-child(2) p {
+  color: var(--theme-color-);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+.footnote .note div:nth-child(2) p i {
+  rotate: 45deg;
+  display: inline-block;
+  font-size: 2rem;
+}
+.note:nth-child(2) {
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+}
