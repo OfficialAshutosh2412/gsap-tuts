@@ -1,0 +1,44 @@
+@font-face {
+  font-family: japan;
+  src: url("/3856NeueMachina.woff2");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: #111;
+}
+.page1,
+.page2,
+.page3 {
+  width: 100%;
+  height: 100vh;
+}
+.ticker {
+  background: #d9ff06;
+  display: flex;
+  gap: 2vw;
+  padding: 1vw;
+  overflow: hidden;
+  transform: translateX(0%);
+}
+.ticker .move {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding: 2vw 0;
+}
+.ticker .move img {
+  width: 4vw;
+}
+
+.ticker .move h1 {
+  font-size: 4vw;
+  font-family: japan;
+}
